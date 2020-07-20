@@ -1,0 +1,274 @@
+@font-face {
+    font-family: RosewoodStd-Regular;
+    src: url("../assets/fonts/RosewoodStd-Regular.otf") format("opentype");
+}
+@font-face{
+    font-family: Avenida-Std-Regular;
+    src: url("../assets/fonts/Avenida\ Std\ Regular.otf") format("opentype");
+}
+
+@font-face{
+    font-family: Sacramento-Regular;
+    src: url("../assets/fonts/Sacramento-Regular.ttf") format("truetype");
+}
+
+body{
+    background-image: url("../Images/backgroundimage.png");
+    background-color: #162037; 
+}
+
+#home-section{
+    text-align: center;
+}
+
+
+.brand{
+    font-family: Avenida-Std-Regular;
+    color: #CFD0D1;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.brand:hover{
+    text-decoration: none;
+    color: #CFD0D1;
+}
+
+.beneath-brand{
+    color: #c7c7c7;
+    margin-top: -18px;
+}
+
+
+.main-h1{
+    font-family: RoseWoodStd-Regular;
+    color: #CFD0D1;
+    font-size: 5.625rem;
+    padding-bottom: 10px;
+}
+
+.hr-under-h1{
+    border-top: 4px solid #DB533B;
+    height: 10px;
+    width: 30%;
+}
+.second-h1{
+    font-family: Avenida-Std-Regular;
+    font-size: 5.3rem;
+    color:  #CFD0D1;
+    margin-top: -20px;
+}
+
+.third-h1{
+    font-family: Avenida-Std-Regular;
+    font-size: 3.3rem;
+    /* width: auto; */
+    /* font-size: 52.8px; */
+    color:  #CFD0D1;
+}
+
+.cursive-h2{
+    text-align: center;
+    background-color: #DB533B;
+    font-family: Sacramento-Regular;
+    color: white;
+    font-size: 2.5rem;
+    /* font-size: 4vw; */
+    /* width: 30%; */
+    margin: auto;
+    width: 400px;
+}
+
+
+
+/* Navbar */
+
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.nav-item{
+    padding: 0 20px;
+}
+
+/* Rocket Image Styles */
+.rocket-img-container{
+    text-align: center;
+}
+.rocket-img{
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+/* start images */
+
+.img-star{
+    position: absolute;
+}
+
+.first{
+    left: 6%;
+    bottom: 500px;
+}
+.second{
+    right: 4%;
+    bottom: 580px;
+}
+.third{
+    left: 28%;
+    bottom: 400px;
+}
+.forth{
+    right: 20%;
+    bottom: 450px;
+}
+.fifth{
+    left: 16%;
+    bottom: 50px;
+}
+.sixth{
+    right: 25%;
+    bottom: -20px;
+}
+.seventh{
+    left: 25%;
+    bottom: -180px;
+}
+
+/* slant lines */
+
+.slant-line-1{
+    width: 60px;
+    height: 10px;
+    border-bottom: 3px solid #CFD0D1;
+    -webkit-transform:
+        translateY(-20px)
+        translateX(5px)
+        rotate(-40deg); 
+    position: absolute;
+    bottom: 200px;
+    right: 20%;
+}
+
+.slant-line-2{
+    width: 60px;
+    height: 10px;
+    border-bottom: 3px solid #CFD0D1;
+    -webkit-transform:
+        translateY(-20px)
+        translateX(5px)
+        rotate(40deg); 
+    position: absolute;
+    bottom: -150px;
+    left: 10%;
+}
+
+
+/* contact section */
+.contact-form{
+    background-color: #DB533B;
+
+    margin-bottom: 1%;
+    padding: 10px 30%;
+    text-align: right;
+}
+
+.form-elements{
+    margin: 10px auto;
+}
+
+.submit-button{
+    margin-right: 0;
+    background-color:  #162037;
+    color: white;
+    border: none;
+    margin-top: 1%;
+}
+
+
+/* footer */
+
+footer{
+    color: #CFD0D1;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+.social-icon{
+    margin: 20px 10px;
+    color: #CFD0D1;
+}
+.social-icon-link:hover{
+    text-decoration: none;
+}
+
+/* @media (max-width:500px){
+    .cursive-h2{
+        width: 96%;
+    }
+
+} */
+
+@media (max-width:440px){
+    
+    .second-h1{
+        font-size: 70px;
+    }
+
+    .cursive-h2{
+        width: 95%;
+        font-size: 2rem;
+    }
+
+    .third-h1{
+        font-size: 45px;
+    }
+
+}
+
+
+@media (max-width:700px){
+    .contact-form{
+        padding: 10px 15%;
+    }
+}
+
+/* To hide third star on screen */
+@media (max-width:1200px){
+
+    .third{
+        /* left: 18%;
+        bottom: 220px; */
+        visibility: hidden;
+    }
+    .forth{
+        right: 4%;
+        top: 450px;
+    }
+    .fifth{
+        left: 4%;
+        bottom: -12px;
+    }
+    .sixth{
+        visibility: hidden;
+    }
+    .seventh{
+        visibility: hidden;
+    }
+    .slant-line-1{
+        top: 110px;
+        right: 4%;
+        width: 40px;
+    }
+    .slant-line-2{
+        visibility: hidden;
+    }
+}
+/* Responsiveness checked till screen size= 370px wide */
